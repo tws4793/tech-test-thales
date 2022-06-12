@@ -7,8 +7,8 @@ export type TestCase = {
 
 const noMockTestCases = 16
 const sizeMockTestCases = 10000
-const minNumber = -100000
-const maxNumber = 100000
+const minNumber = -100
+const maxNumber = 100
 
 /**
  * Returns an array of integers that are randomised
