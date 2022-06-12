@@ -22,9 +22,7 @@ const sumPair = (integers: Array<number>, sum: number): Array<Array<number>> => 
     const difference: number = sum - item
 
     if(newmap.hasOwnProperty(difference)){
-      for(let i = 0; i < newmap[item]; i++){
-        output.push([difference,item])
-      }
+      output.push([difference,item])
     }
 
     if(newmap.hasOwnProperty(item)){
