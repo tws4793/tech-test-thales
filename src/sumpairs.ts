@@ -16,20 +16,16 @@
  */
 const sumPair = (integers: Array<number>, sum: number): Array<Array<number>> => {
   let output: Array<Array<number>> = []
-  const newmap: any = {}
+  const map: any = {}
 
-  integers.forEach((item) => {
+  integers.forEach((item: number, index: number) => {
     const difference: number = sum - item
 
-    if(newmap.hasOwnProperty(difference)){
+    if(map.hasOwnProperty(difference)){
       output.push([difference,item])
     }
 
-    if(newmap.hasOwnProperty(item)){
-      newmap[item]++
-    }
-
-    newmap[item] = 1
+    map[item] = index
   })
 
   return output
