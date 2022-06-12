@@ -5,7 +5,7 @@ export type TestCase = {
   sum: number;
 };
 
-const noMockTestCases = 16
+const noMockTestCases = 15
 const sizeMockTestCases = 10000
 const minNumber = -100
 const maxNumber = 100
