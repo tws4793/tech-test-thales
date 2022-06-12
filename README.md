@@ -34,3 +34,17 @@ const sumPair = (integers: Array<number>, sum: number): Array<Array<number>> => 
 The algorithm uses the hashing method. It checks in the map whether the difference of the sum and the current item exists; if it does, it pushes to the output, otherwise it is recorded in the map of integers that have been observed by the loop.
 
 The algorithm has $O(n)$ time complexity, as we are looping through the array of integers.
+
+## Setup and Usage
+
+Clone this repository and install all the packages:
+
+```console
+$ npm install
+```
+
+To run the testcases, run:
+
+```console
+$ npm run test
+```
